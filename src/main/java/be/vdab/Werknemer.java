@@ -2,22 +2,24 @@ package be.vdab;
 
 public abstract class Werknemer {
 
-    private final double UURLOON;
+    // Atributen
+    static final double UURLOON = 12.5;
     private String naam;
     private Long rijksregisternummer;
 
+    // Constructor met 2 waarden
     public Werknemer(String naam, Long rijksregisternummer) {
         this.naam = naam;
         this.rijksregisternummer = rijksregisternummer;
     }
 
-    public double getLoon();
+    // Get Loon method
+    public abstract double getLoon();
 
     @Override
     public String toString() {
         return "Werknemer{" +
-                "UURLOON=" + UURLOON +
-                ", naam='" + naam + '\'' +
+                "naam='" + naam + '\'' +
                 ", rijksregisternummer=" + rijksregisternummer +
                 '}';
     }
