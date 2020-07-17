@@ -11,6 +11,14 @@ public class Bediende extends Werknemer {
     }
 
     public double getLoon() {
-        return 0;
+        return UURLOON * LOONFACTOR * this.weddeBarema;
     }
+
+    @Override
+    public String toString() {
+        return  "Naam: " + naam + '\n' +
+                "Nummer: " + rijksregisternummer + '\n' +
+                "Loon: " + getLoon() + '\n';
+    }
+
 }

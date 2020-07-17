@@ -4,8 +4,8 @@ public abstract class Werknemer {
 
     // Atributen
     static final double UURLOON = 12.5;
-    private String naam;
-    private Long rijksregisternummer;
+    public String naam;
+    public Long rijksregisternummer;
 
     // Constructor met 2 waarden
     public Werknemer(String naam, Long rijksregisternummer) {
@@ -18,9 +18,8 @@ public abstract class Werknemer {
 
     @Override
     public String toString() {
-        return "Werknemer{" +
-                "naam='" + naam + '\'' +
-                ", rijksregisternummer=" + rijksregisternummer +
-                '}';
+        return  "Naam: " + naam + '\n' +
+                "Nummer: " + rijksregisternummer + '\n' +
+                "Loon: " + getLoon() + '\n';
     }
 }

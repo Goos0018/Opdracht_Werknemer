@@ -23,8 +23,8 @@ public class Arbeider extends Werknemer {
 
     @Override
     public String toString() {
-        return "Arbeider{" +
-                "aantalUren=" + aantalUren +
-                '}';
+        return  "Naam: " + naam + '\n' +
+                "Nummer: " + rijksregisternummer + '\n' +
+                "Loon: " + getLoon() + '\n';
     }
 }
